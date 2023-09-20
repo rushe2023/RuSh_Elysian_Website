@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* nav bar */
 h2 {
   vertical-align: center;
@@ -12,7 +12,7 @@ html, body {
 }
 
 * {
-  font-family: "Raleway";
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 .logo{
@@ -43,6 +43,7 @@ html, body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 18px;
 }
 
 .menu > li >a {
@@ -51,6 +52,8 @@ html, body {
   color: #2D4059;
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
+  word-spacing: 1px;
 }
 .menu .button a{
    padding: 10px;
@@ -157,6 +160,11 @@ html, body {
   }
 }
 
+/* spacing vertical */
+.spacing{
+  padding: 4rem 0;
+}
+
 /* container 1 */
 .container1{
   width: 100%;
@@ -167,9 +175,9 @@ html, body {
   background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 100px;
 }
 .schedule-call{
   width: 390px;
@@ -211,6 +219,7 @@ html, body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    color: #2D4059;
 }
 .welcome-heading{
   width: 430px;
@@ -227,9 +236,9 @@ html, body {
   background-color: #EFEFEF;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   justify-content: space-evenly;
-  padding: 20px 20px;
+  padding: 60px 20px;
 
 }
 .container2>div{
@@ -238,7 +247,7 @@ html, body {
   background-color: #FFFFFF;
   color: #2D4059;
   font-size: 16px;
-  padding: 10px;
+  padding: 20px;
 }
 .box>div{
   width: 50px;
@@ -406,12 +415,13 @@ line-height: 23px;
   height: 200px;
 }
 .logo-img{
-  width: 200px;
-  height: 62px;
+  width: 220px;
+  height: 55px;
 }
 .logo-img>img{
-  width: 200px;
-  height: 62px;
+  width: 220px;
+  height: 50px;
+  object-fit: fill;
 }
 
 /* footerSocialMedia */
@@ -426,7 +436,7 @@ line-height: 23px;
   font-size: 40px;
 }
 .footerSocialMedia>div>a>i{
-  margin-right: 20px;
+  margin-right: 10px;
   color: #2D4059;
 }
 
@@ -447,7 +457,7 @@ line-height: 23px;
 .container-1{
     width: 100%;
     height: 512px;
-    background-image: url(images/sundar.jpg);
+    background-image: url(../images/sundar.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -487,7 +497,7 @@ line-height: 23px;
     justify-content:space-around;
     align-items: center;
     gap: 20px;
-    padding: 50px;
+    padding: 100px 0;
     background-color: #FFFFFF;
 }
 .container-3{
@@ -498,7 +508,7 @@ line-height: 23px;
     justify-content:space-around;
     align-items: center;
     gap: 20px;
-    padding: 50px;
+    padding: 100px 0;
     background-color: #EFEFEF;
 }
 .container-4{
@@ -687,7 +697,7 @@ line-height: 23px;
 .container-12{
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -708,11 +718,13 @@ line-height: 23px;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 50px;
-  padding: 20px;
+  padding: 80px 0;
 }
 .container-13>div{
   width: 260px;
   height: 315px;
+  padding: 20px 0;
+  margin: 20px;
 }
 .container-13>div>div{
   width: 55px;
@@ -965,7 +977,7 @@ line-height: 23px;
 .container-23{
   width: 100%;
   height: 450px;
-  background-image: url(images\map.png);
+  background-image: url(../images/map.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
