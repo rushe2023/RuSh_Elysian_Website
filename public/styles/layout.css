@@ -10,32 +10,33 @@ html, body {
   height: 100%;
   text-decoration: none;
 }
-
+.container{
+  max-width: 1200px;
+  min-width: none;
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+}
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-.logo{
-    width: 300px;
-    height: 53px;
-
-}
 .logo>img{
-  width: 300px;
-  height: 53px;
+  width: 320px;
+  height: 100px;
+  
 }
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background-color: #2D4059;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #2D4059;
-  height: 112px;
-  padding: 1em;
+  color: #FFFFFF;
+  height: 100px;
+  padding: 0.5em;
   width: 100%;
-  position:fixed;
 }
 
 .menu {
@@ -44,23 +45,21 @@ html, body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 18px;
 }
 
 .menu > li >a {
   margin: 0 1.2rem;
   overflow: hidden;
-  color: #2D4059;
+  color: #FFFFFF;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   word-spacing: 1px;
 }
 .menu .button a{
    padding: 10px;
-   background-color:#2D4059 ;
+   background-color:#F07B3F ;
    border-radius: 10px;
-   color:#F07B3F ;
+   color:#2D4059 ;
 
 }
 .menu-button-container {
@@ -81,7 +80,7 @@ html, body {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #2D4059;
+  background-color: #FFFFFF;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -144,7 +143,8 @@ html, body {
   .menu .button a{
     padding: 0;
     border-radius: 0;
-    color: #F07B3F ;
+    color:#F07B3F ;
+    background-color: #2D4059;
  
  }
   .menu > li {
@@ -393,13 +393,10 @@ line-height: 23px;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #FFFFFF;
-  color: #2D4059;
+  background-color: #2D4059;
+  color:#FFFFFF ;
   margin-top: 40px;
-}
-.logo-description{
-  width: 230px;
-  height: 280px;
+  font-size: 15px;
 }
 .detailes{
   width: 230px;
@@ -408,20 +405,26 @@ line-height: 23px;
 .detailes>div>a{
   line-height: 40px;
   text-decoration: none;
-  color: #2D4059;
-  font-weight: 600;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
 }
 .contact-detailes{
   width: 230px;
   height: 200px;
 }
-.logo-img{
-  width: 220px;
-  height: 55px;
+.logo-description{
+  width: 230px;
+  height: 250px;
+  
+}
+.logo-description>p{
+  margin: 0;
+  padding-left: 30px;
 }
 .logo-img>img{
-  width: 220px;
-  height: 50px;
+  width: 230px;
+  height: 80px;
   object-fit: fill;
 }
 
@@ -430,7 +433,7 @@ line-height: 23px;
 .footerSocialMedia{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: #2D4059;
   text-align: center;
 }
 .footerSocialMedia>div{
@@ -438,7 +441,7 @@ line-height: 23px;
 }
 .footerSocialMedia>div>a>i{
   margin-right: 10px;
-  color: #2D4059;
+  color: #FFFFFF;
 }
 
 /* footer */
@@ -446,9 +449,10 @@ line-height: 23px;
 .footer{
   text-align: center;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   padding: 10px;
-  color: #2D4059;
+  color: #FFFFFF;
+  background-color: #2D4059;
 }
 
 /* About us page */
