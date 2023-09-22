@@ -18,7 +18,7 @@
       <img src="images\RuSh_Elysian_Main_white.png">
     </div>
     <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
+  <label class='menu-button-container' for="menu-toggle">
     <div class='menu-button'></div>
   </label>
     <ul class="menu">
@@ -26,10 +26,26 @@
       <li><a href="/about">About us</a></li>
       <li><a href="/service">Services</a></li>
       <!-- <li><a href="#">Careers</a></li> -->
-      <li class="button"><a href="/contact">Contact us</a></li>
+      <li class="button"><a href="/contact">Contact us</a></li>&nbsp;&nbsp;
+      <a href="#"><i class="fa-solid fa-sun fa-lg" style="color: #e9ecf1;" id="icon"></i></a>
     </ul>
   </nav>
 </header>
+
+<script>
+var icon= document.getElementById("icon");
+icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  }else{
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+  }
+</script>  
 <main class="container">
+
 
      

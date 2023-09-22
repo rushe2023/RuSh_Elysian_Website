@@ -31,13 +31,29 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFFFFF;
+  color: var(--primary-color);
   height: 100px;
   padding: 0.5em;
   width: 100%;
 }
+:root{
+  --primary-color: #FFFFFF;
+  --secondary-color:#2D4059;
+}
+.dark-theme{
+  --primary-color: #000106;
+  --secondary-color:#FFFFFF;
+} 
+/* .dark-theme{
+  --primary-color: #FFFFFF;
+  --secondary-color:#2D4059;
+}
+:root{
+  --primary-color: #000106;
+  --secondary-color:#FFFFFF;
+} */
 
 .menu {
   display: flex;
@@ -46,11 +62,12 @@ html, body {
   margin: 0;
   padding: 0;
   gap: 25px;
+
 }
 .menu > li >a {
   margin: 0 1.2rem;
   overflow: hidden;
-  color: #FFFFFF;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 17px;
   word-spacing: 1px;
@@ -59,7 +76,7 @@ html, body {
    padding: 10px;
    background-color:#F07B3F ;
    border-radius: 10px;
-   color:#2D4059 ;
+   color: var(--secondary-color) ;
 
 }
 .menu-button-container {
@@ -80,7 +97,7 @@ html, body {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -144,7 +161,7 @@ html, body {
     padding: 0;
     border-radius: 0;
     color:#F07B3F ;
-    background-color: #2D4059;
+    background-color: var(--secondary-color);
  
  }
   .menu > li {
@@ -153,11 +170,11 @@ html, body {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    background-color:#2D4059 ;
+    background-color: var(--secondary-color);
     text-decoration: none;
   }
   .menu li a{
-    color: #FFFFFF;
+    color: var(--primary-color);
   }
 }
 
@@ -173,7 +190,7 @@ html, body {
 .container1-box1{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -185,8 +202,8 @@ html, body {
   height: 180px;
   margin-left: 40px;
   border-radius: 12px;
-  background-color: #2D4059;
-  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,13 +216,13 @@ html, body {
   width: 125px;
   height: 50px;
   background-color: #F07B3F;
-  color: #FFFFFF;
+  color: var(--primary-color);
   border-radius: 12px;
   margin-left: 200px;
 }
 .schedule-call>div>button>a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .img-box{
   width: 500px;
@@ -218,7 +235,7 @@ html, body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    color: #2D4059;
+    color: var(--secondary-color);
 }
 .welcome-heading{
   width: 430px;
@@ -243,7 +260,7 @@ html, body {
 .container2>div{
   width: 300px;
   height: 350px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   color: #2D4059;
   font-size: 16px;
   padding: 20px;
@@ -302,7 +319,7 @@ html, body {
 .container3{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   color: #2D4059;
   display: flex;
   flex-wrap: wrap;
@@ -338,7 +355,7 @@ line-height: 23px;
 /* container-4 */
 
 .how{
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   width: 100%;
   height: 100px;
   color: #2D4059;
@@ -349,7 +366,7 @@ line-height: 23px;
 .container4{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   gap: 140px;
@@ -367,9 +384,22 @@ line-height: 23px;
 .box11>div{
   width: 50px;
   height: 50px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
 }
-.box11:hover{
+
+.box-1:hover{
+  background-color: #2D4059;
+  color: var(--primary-color);
+}
+.box-2:hover{
+  background-color: #2D4059;
+  color: #FFFFFF;
+}
+.box-3:hover{
+  background-color: #2D4059;
+  color: #FFFFFF;
+}
+.box-4:hover{
   background-color: #2D4059;
   color: #FFFFFF;
 }
@@ -386,7 +416,7 @@ line-height: 23px;
   gap: 20px;
   padding: 20px;
   background-color: #2D4059;
-  color:#FFFFFF ;
+  color: var(--primary-color);
   margin-top: 40px;
   font-size: 15px;
   font-weight: 300;
@@ -399,8 +429,8 @@ line-height: 23px;
 .detailes>div>a{
   line-height: 40px;
   text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 300;
+  color: var(--primary-color);
+  font-weight: 400;
   font-size: 16px;
   
 }
@@ -446,7 +476,7 @@ footer{
 }
 .footerSocialMedia>div>a>i{
   margin-right: 10px;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 
 
@@ -457,7 +487,7 @@ footer{
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
-  color: #FFFFFF;
+  color: var(--primary-color);
   background-color: #2D4059;
 }
 
