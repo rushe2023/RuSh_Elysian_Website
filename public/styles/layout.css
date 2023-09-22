@@ -45,14 +45,14 @@ html, body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 25px;
 }
-
 .menu > li >a {
   margin: 0 1.2rem;
   overflow: hidden;
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   word-spacing: 1px;
 }
 .menu .button a{
@@ -209,9 +209,7 @@ html, body {
 }
 .img-box{
   width: 450px;
-  height: 315px;
-  border: 2px solid green;
-  margin-left:10px;
+  height: 350px;
 }
 .container1-box2{
     display: flex;
@@ -354,13 +352,13 @@ line-height: 23px;
   background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 140px;
   justify-content: space-evenly;
   padding: 20px 20px;
 }
 .container4>div{
   width: 300px;
-  height: 350px;
+  height: 300px;
   background-color: #EFEFEF;
   color: #2D4059;
   font-size: 16px;
@@ -371,19 +369,7 @@ line-height: 23px;
   height: 50px;
   background-color: #FFFFFF;
 }
-.box-1:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
-}
-.box-2:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
-}
-.box-3:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
-}
-.box-4:hover{
+.box11:hover{
   background-color: #2D4059;
   color: #FFFFFF;
 }
@@ -403,17 +389,20 @@ line-height: 23px;
   color:#FFFFFF ;
   margin-top: 40px;
   font-size: 15px;
+  font-weight: 300;
 }
 .detailes{
   width: 230px;
   height: 200px;
+  text-align: center;
 }
 .detailes>div>a{
   line-height: 40px;
   text-decoration: none;
   color: #FFFFFF;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
+  
 }
 .contact-detailes{
   width: 230px;
@@ -439,8 +428,8 @@ line-height: 23px;
 }
 footer{
   width:100%;
-  height: 550px;
-  text-align: center;
+  height: 450px;
+  text-align: left;
   padding-top: 20px;
 }
 
