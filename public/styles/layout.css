@@ -60,15 +60,16 @@ html, body {
   flex-direction: row;
   list-style-type: none;
   margin: 0;
-  padding:0;
-}
+  padding: 0;
+  gap: 25px;
 
+}
 .menu > li >a {
   margin: 0 1.2rem;
   overflow: hidden;
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   word-spacing: 1px;
 }
 .menu .button a{
@@ -224,10 +225,8 @@ html, body {
   color: var(--primary-color);
 }
 .img-box{
-  width: 450px;
-  height: 315px;
-  border: 2px solid green;
-  margin-left:10px;
+  width: 500px;
+  height: 400px;
 }
 .container1-box2{
     display: flex;
@@ -370,13 +369,13 @@ line-height: 23px;
   background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 140px;
   justify-content: space-evenly;
   padding: 20px 20px;
 }
 .container4>div{
   width: 300px;
-  height: 350px;
+  height: 300px;
   background-color: #EFEFEF;
   color: #2D4059;
   font-size: 16px;
@@ -387,6 +386,7 @@ line-height: 23px;
   height: 50px;
   background-color: var(--primary-color);
 }
+
 .box-1:hover{
   background-color: #2D4059;
   color: var(--primary-color);
@@ -419,10 +419,12 @@ line-height: 23px;
   color: var(--primary-color);
   margin-top: 40px;
   font-size: 15px;
+  font-weight: 300;
 }
 .detailes{
   width: 230px;
   height: 200px;
+  text-align: center;
 }
 .detailes>div>a{
   line-height: 40px;
@@ -430,6 +432,7 @@ line-height: 23px;
   color: var(--primary-color);
   font-weight: 400;
   font-size: 16px;
+  
 }
 .contact-detailes{
   width: 230px;
@@ -455,8 +458,8 @@ line-height: 23px;
 }
 footer{
   width:100%;
-  height: 550px;
-  text-align: center;
+  height: 450px;
+  text-align: left;
   padding-top: 20px;
 }
 
