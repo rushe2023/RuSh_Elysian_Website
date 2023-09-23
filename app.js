@@ -84,8 +84,6 @@ app.listen(port, () => {
 });
 
 
-// script.js
-
 // document.addEventListener("DOMContentLoaded", function () {
 //   var icon = document.getElementById("icon");
 // 
@@ -100,4 +98,5 @@ app.listen(port, () => {
 //       }
 //   };
 // });
+
 

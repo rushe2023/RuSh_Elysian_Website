@@ -38,22 +38,36 @@ html, body {
   padding: 0.5em;
   width: 100%;
 }
-:root{
+/* :root{
   --primary-color: #FFFFFF;
   --secondary-color:#2D4059;
 }
 .dark-theme{
-  --primary-color: #000106;
+  --primary-color: #333333;
   --secondary-color:#FFFFFF;
 } 
-/* .dark-theme{
-  --primary-color: #FFFFFF;
+.dark-theme{
+  --primary-color: #FFFFFF;#40E0D0
   --secondary-color:#2D4059;
 }
 :root{
   --primary-color: #000106;
   --secondary-color:#FFFFFF;
 } */
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #2D4059;
+  --text-color: #333333;
+  --accent-color: #0074E4;
+}
+
+.dark-theme {
+  --primary-color: #333333;
+  --secondary-color: #FFFFFF;
+  --text-color: #FFFFFF;
+  --accent-color: #FF5733;
+}
 
 .menu {
   display: flex;
@@ -68,6 +82,7 @@ html, body {
   overflow: hidden;
   color: var(--primary-color);
   text-decoration: none;
+  font-style: var(--text-color);
   font-size: 18px;
   word-spacing: 1px;
 }
@@ -185,6 +200,7 @@ html, body {
 /* container 1 */
 .container1{
   width: 100%;
+  font-style: var(--text-color);
 }
 .container1-box1{
   width: 100%;
@@ -237,6 +253,8 @@ html, body {
     text-align: center;
     flex-wrap: wrap;
     color: var(--secondary-color);
+    font-style: var(--text-color);
+    background-color: var(--primary-color);
 }
 .welcome-heading{
   width: 430px;
@@ -245,6 +263,9 @@ html, body {
 .description{
   width: 70%;
   font-size: 16px;
+  color: var(--secondary-color);
+  text-decoration: var(--primary-color);
+  
 }
 /* container-2 */
 .container2{
@@ -256,7 +277,7 @@ html, body {
   gap: 50px;
   justify-content: space-evenly;
   padding: 60px 20px;
-
+  font-style: var(--text-color);
 }
 .container2>div{
   width: 300px;
@@ -285,6 +306,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: var(--text-color);
 }
 .box1:hover{
   background-color:#19A7CE ;
@@ -326,6 +348,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+  font-style: var(--text-color);
 
 }
 .container3>div{
@@ -373,6 +396,7 @@ line-height: 23px;
   gap: 20px;
   justify-content: space-evenly;
   padding: 20px 20px;
+  font-style: var(--text-color);
 }
 .container4>div{
   width: 300px;
@@ -504,6 +528,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    font-style: var(--text-color);
 }
 .schedule-call2{
     background-color: #F07B3F;
@@ -537,6 +562,7 @@ footer{
     gap: 20px;
     padding: 100px 0;
     background-color: var(--primary-color);
+    font-style: var(--text-color);
 }
 .container-3{
     width: 100%;
@@ -548,6 +574,7 @@ footer{
     gap: 20px;
     padding: 100px 0;
     background-color: #EFEFEF;
+    font-style: var(--text-color);
 }
 .container-4{
     width: 100%;
@@ -559,6 +586,12 @@ footer{
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    font-style: var(--text-color); 
+}
+.heading2:hover,.heading3:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-style: var(--text-color);
 }
 .img-3{
     width: 300px;
@@ -598,6 +631,8 @@ footer{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .teamWork-boxes{
    width: 520px;
@@ -642,6 +677,7 @@ footer{
 }
 .content4:hover{
   color: #FFFFFF;
+  font-style: var(--text-color);
 }
 
 /* container-6 */
@@ -654,6 +690,7 @@ footer{
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  font-style: var(--text-color);
 }
 .img-6{
   width: 650px;
@@ -739,6 +776,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-12>p{
   width: 532px;
@@ -757,6 +796,8 @@ footer{
   justify-content: space-around;
   gap: 50px;
   padding: 80px 0;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-13>div{
   width: 260px;
@@ -800,7 +841,8 @@ footer{
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
-  align-items: flex-end; 
+  align-items: flex-end;
+  font-style: var(--text-color); 
 }
 .container-14>.heading3{
   width: 100%;
@@ -831,7 +873,8 @@ footer{
 .container-15{
   width: 100%;
   height: auto;
-  background-color: var(--primary-color)
+  background-color: var(--primary-color);
+  font-style: var(--text-color);
 }
 .container-15>p{
   font-size:32px;
@@ -849,6 +892,11 @@ footer{
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 20px;
+  font-style: var(--text-color);
+}
+.container-16>div:hover{
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-16>div{
   width: 300px;
@@ -884,6 +932,8 @@ footer{
   align-items: center;
   gap: 20px;
   padding: 20px;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .content7{
   width: 409px;
