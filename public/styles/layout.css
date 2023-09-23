@@ -455,7 +455,7 @@ line-height: 23px;
   line-height: 40px;
   text-decoration: none;
   color: var(--primary-color);
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   
 }
@@ -469,13 +469,15 @@ line-height: 23px;
   
 }
 .logo-description>p{
-  margin: 0;
-  padding-left: 30px;
+  text-align: right;
+  line-height: 20px;
 }
 .logo-img>img{
   width: 230px;
-  height: 80px;
+  height: auto;
   object-fit: fill;
+  padding-top: 35px;
+  padding-bottom: 20px;
 } */
 .logo-img{
   width:150px;
@@ -551,7 +553,7 @@ footer{
     color: var(--secondary-color);
     font-size: 32px;
     font-weight: 900;
-    margin-bottom: 150px; 
+    margin-bottom: 250px; 
 }
 
 /* container-2,3,4*/
@@ -614,16 +616,19 @@ footer{
     font-weight: 700;
 }
 .content2{
-    width: 620px;
+    width: 600px;
     height: auto;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
+    line-height: 25px;
+
 }
 .content3{
      width: 65%;
      height: auto;
      font-size: 16px;
-     font-weight: 600;
+     /* font-weight: 600; */
+     line-height: 25px;
 }
 
 /* container-5 */
@@ -718,7 +723,8 @@ footer{
 }
 .content5>div>p{
   font-size: 16px;
-  font-weight: 600;
+  line-height: 25px;
+  /* font-weight: 600; */
 }
 
 /* services page css */
