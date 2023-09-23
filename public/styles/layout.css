@@ -22,8 +22,10 @@ html, body {
   box-sizing: border-box;
 }
 .logo>img{
-  width: 320px;
-  height: 100px;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-left: 11px;
   
 }
 .top-nav {
@@ -74,7 +76,7 @@ html, body {
   flex-direction: row;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   gap: 25px;
 
 }
@@ -83,7 +85,7 @@ html, body {
   overflow: hidden;
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   word-spacing: 1px;
 }
 .menu .button a{
