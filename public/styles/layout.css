@@ -38,22 +38,36 @@ html, body {
   padding: 0.5em;
   width: 100%;
 }
-:root{
+/* :root{
   --primary-color: #FFFFFF;
   --secondary-color:#2D4059;
 }
 .dark-theme{
-  --primary-color: #000106;
+  --primary-color: #333333;
   --secondary-color:#FFFFFF;
 } 
-/* .dark-theme{
-  --primary-color: #FFFFFF;
+.dark-theme{
+  --primary-color: #FFFFFF;#40E0D0
   --secondary-color:#2D4059;
 }
 :root{
   --primary-color: #000106;
   --secondary-color:#FFFFFF;
 } */
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #2D4059;
+  --text-color: #333333;
+  --accent-color: #0074E4;
+}
+
+.dark-theme {
+  --primary-color: #333333;
+  --secondary-color: #FFFFFF;
+  --text-color: #FFFFFF;
+  --accent-color: #FF5733;
+}
 
 .menu {
   display: flex;
@@ -69,7 +83,7 @@ html, body {
   overflow: hidden;
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   word-spacing: 1px;
 }
 .menu .button a{
@@ -186,6 +200,7 @@ html, body {
 /* container 1 */
 .container1{
   width: 100%;
+  font-style: var(--text-color);
 }
 .container1-box1{
   width: 100%;
@@ -236,6 +251,8 @@ html, body {
     text-align: center;
     flex-wrap: wrap;
     color: var(--secondary-color);
+    font-style: var(--text-color);
+    background-color: var(--primary-color);
 }
 .welcome-heading{
   width: 430px;
@@ -244,6 +261,9 @@ html, body {
 .description{
   width: 70%;
   font-size: 16px;
+  color: var(--secondary-color);
+  text-decoration: var(--primary-color);
+  
 }
 /* container-2 */
 .container2{
@@ -255,13 +275,13 @@ html, body {
   gap: 50px;
   justify-content: space-evenly;
   padding: 60px 20px;
-
+  font-style: var(--text-color);
 }
 .container2>div{
   width: 300px;
   height: 350px;
   background-color: var(--primary-color);
-  color: #2D4059;
+  color: var(--secondary-color);
   font-size: 16px;
   padding: 20px;
 }
@@ -280,38 +300,39 @@ html, body {
   background-color: #EFEFEF;
   width: 100%;
   height: 100px;
-  color: #2D4059;
+  color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: var(--text-color);
 }
 .box1:hover{
   background-color:#19A7CE ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box2:hover{
   background-color:#609966 ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box3:hover{
   background-color:#F07B3F ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box4:hover{
   background-color:#19A7CE ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box5:hover{
   background-color:#F07B3F ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box6:hover{
   background-color:#19A7CE ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box7:hover{
   background-color:#609966 ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 
 /* container-3 */
@@ -320,11 +341,12 @@ html, body {
   width: 100%;
   height: auto;
   background-color: var(--primary-color);
-  color: #2D4059;
+  color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+  font-style: var(--text-color);
 
 }
 .container3>div{
@@ -358,7 +380,7 @@ line-height: 23px;
   background-color: var(--primary-color);
   width: 100%;
   height: 100px;
-  color: #2D4059;
+  color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,12 +394,13 @@ line-height: 23px;
   gap: 140px;
   justify-content: space-evenly;
   padding: 20px 20px;
+  font-style: var(--text-color);
 }
 .container4>div{
   width: 300px;
   height: 300px;
   background-color: #EFEFEF;
-  color: #2D4059;
+  color: var(--secondary-color);
   font-size: 16px;
   padding: 10px;
 }
@@ -388,20 +411,20 @@ line-height: 23px;
 }
 
 .box-1:hover{
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 .box-2:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .box-3:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .box-4:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* footerContactDetailes */
@@ -415,7 +438,7 @@ line-height: 23px;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   margin-top: 40px;
   font-size: 15px;
@@ -468,7 +491,7 @@ footer{
 .footerSocialMedia{
   width: 100%;
   height: auto;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 .footerSocialMedia>div{
@@ -488,7 +511,7 @@ footer{
   font-weight: 400;
   padding: 10px;
   color: var(--primary-color);
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
 }
 
 /* About us page */
@@ -507,6 +530,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    font-style: var(--text-color);
 }
 .schedule-call2{
     background-color: #F07B3F;
@@ -517,12 +541,12 @@ footer{
 }
 .schedule-call2>a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--primary-color);
 }
 .conatiner-1-text{
     width: 616px;
     height: auto;
-    color: #2D4059;
+    color: var(--secondary-color);
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 150px; 
@@ -539,7 +563,8 @@ footer{
     align-items: center;
     gap: 20px;
     padding: 100px 0;
-    background-color: #FFFFFF;
+    background-color: var(--primary-color);
+    font-style: var(--text-color);
 }
 .container-3{
     width: 100%;
@@ -551,6 +576,7 @@ footer{
     gap: 20px;
     padding: 100px 0;
     background-color: #EFEFEF;
+    font-style: var(--text-color);
 }
 .container-4{
     width: 100%;
@@ -560,8 +586,14 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #FFFFFF;
-    color: #2D4059;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-style: var(--text-color); 
+}
+.heading2:hover,.heading3:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-style: var(--text-color);
 }
 .img-3{
     width: 0px;
@@ -572,7 +604,7 @@ footer{
     width: 620px;
     height: auto;
     text-align: center;
-    color: #2D4059;
+    color: var(--secondary-color);
     
 }
 .heading1{
@@ -601,6 +633,8 @@ footer{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .teamWork-boxes{
    width: 520px;
@@ -621,7 +655,7 @@ footer{
 .img-5{
    width: 60px;
    height: 60px;
-   background-color: #FFFFFF;
+   background-color: var(--primary-color);
 }
 .content4{
   width: 381px;
@@ -629,7 +663,7 @@ footer{
   font-size: 16px;
   font-weight: 400;
   padding: 0px 10px;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .heading2{
   font-size:22px;
@@ -641,10 +675,11 @@ footer{
   border: 2px solid #609966;
 }
 .teamWork-boxes>div:hover{
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
 }
 .content4:hover{
   color: #FFFFFF;
+  font-style: var(--text-color);
 }
 
 /* container-6 */
@@ -657,6 +692,7 @@ footer{
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  font-style: var(--text-color);
 }
 .img-6{
   width: 650px;
@@ -672,7 +708,7 @@ footer{
   text-align: center;
 }
 .content5>div{
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .content5>div>label{
   font-size: 30px;
@@ -694,14 +730,14 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   gap: 30px;
   padding: 30px;
 }
 .content6{
   width: 460px;
   height:250px;
-  color: #FFFFFF;
+  color: var(--primary-color);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -726,7 +762,7 @@ footer{
   font-size: 20px;
   font-weight: 900;
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .img-7{
   width: 600px;
@@ -742,12 +778,14 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-12>p{
   width: 532px;
   font-size: 32px;
   font-weight: 700;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 
 /* container-13 */
@@ -760,6 +798,8 @@ footer{
   justify-content: space-around;
   gap: 50px;
   padding: 80px 0;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-13>div{
   width: 260px;
@@ -778,7 +818,7 @@ footer{
   width: 100%;
   height: 52px;
   background-color: #EFEFEF;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -787,7 +827,7 @@ footer{
   width: 100%;
   height: 156px;
   background-color: #EFEFEF;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: left;
   font-size: 14px;
   font-weight: 400;
@@ -798,12 +838,13 @@ footer{
 .container-14{
   width: 100%;
   height:auto;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   padding:40px;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
-  align-items: flex-end; 
+  align-items: flex-end;
+  font-style: var(--text-color); 
 }
 .container-14>.heading3{
   width: 100%;
@@ -812,14 +853,14 @@ footer{
 .heading3>p{
   font-size: 30px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: var(--primary-color);
   text-align: center;
 }
 .container-14>.schedule-button{
   width: 350px;
   height: 60px;
   border-radius: 25px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -834,12 +875,13 @@ footer{
 .container-15{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF
+  background-color: var(--primary-color);
+  font-style: var(--text-color);
 }
 .container-15>p{
   font-size:32px;
   font-weight: 700;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -852,18 +894,23 @@ footer{
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 20px;
+  font-style: var(--text-color);
+}
+.container-16>div:hover{
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-16>div{
   width: 300px;
   height: 360px;
   background-color: #EFEFEF;
   padding: 10px;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .container-16>div>div{
   width: 50px;
   height: 50px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
 }
 .container-16>div>h3{
   font-size: 20px;
@@ -887,11 +934,13 @@ footer{
   align-items: center;
   gap: 20px;
   padding: 20px;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .content7{
   width: 409px;
   height:200px;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: center;
 }
 .content7>h3{
@@ -923,7 +972,7 @@ footer{
 .container-22>div{
   width: 500px;
   height: 734px;
-  color: #2D4059;
+  color: var(--secondary-color);
   background-color: #EFEFEF;
 }
 .contactUs-box{
@@ -941,7 +990,7 @@ footer{
 .contactUs-box>div{
   width: 450px;
   height: 160px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -973,7 +1022,7 @@ footer{
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .schedule-call-box>p{
   font-size: 32px;
@@ -992,19 +1041,19 @@ footer{
 .schedule-call-box>form>.input-box1{
   width:100%;
   height: 38px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   border: none;
 }
 .schedule-call-box>form>.input-box2{
   width: 100%;
   height: 131px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   border: none;
 }
 .schedule-call-box>form>button{
   width: 100%;
   height: 38px;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   color: #F07B3F;
   font-size:24px;
   font-weight: 600;
