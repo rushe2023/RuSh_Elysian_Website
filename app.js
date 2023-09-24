@@ -83,3 +83,20 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var icon = document.getElementById("icon");
+// 
+//   icon.onclick = function () {
+//       document.body.classList.toggle("dark-theme");
+//       if (document.body.classList.contains("dark-theme")) {
+//           icon.classList.remove("fa-moon");
+//           icon.classList.add("fa-sun");
+//       } else {
+//           icon.classList.remove("fa-sun");
+//           icon.classList.add("fa-moon");
+//       }
+//   };
+// });
+
+

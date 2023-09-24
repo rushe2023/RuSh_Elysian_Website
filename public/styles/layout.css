@@ -22,8 +22,10 @@ html, body {
   box-sizing: border-box;
 }
 .logo>img{
-  width: 320px;
-  height: 100px;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-left: 11px;
   
 }
 .top-nav {
@@ -31,12 +33,42 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFFFFF;
+  color: var(--primary-color);
   height: 100px;
   padding: 0.5em;
   width: 100%;
+}
+/* :root{
+  --primary-color: #FFFFFF;
+  --secondary-color:#2D4059;
+}
+.dark-theme{
+  --primary-color: #333333;
+  --secondary-color:#FFFFFF;
+} 
+.dark-theme{
+  --primary-color: #FFFFFF;#40E0D0
+  --secondary-color:#2D4059;
+}
+:root{
+  --primary-color: #000106;
+  --secondary-color:#FFFFFF;
+} */
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #2D4059;
+  --text-color: #333333;
+  --accent-color: #0074E4;
+}
+
+.dark-theme {
+  --primary-color: #333333;
+  --secondary-color: #FFFFFF;
+  --text-color: #FFFFFF;
+  --accent-color: #FF5733;
 }
 
 .menu {
@@ -44,22 +76,23 @@ html, body {
   flex-direction: row;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   gap: 25px;
+
 }
 .menu > li >a {
   margin: 0 1.2rem;
   overflow: hidden;
-  color: #FFFFFF;
+  color: var(--primary-color);
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   word-spacing: 1px;
 }
 .menu .button a{
    padding: 10px;
    background-color:#F07B3F ;
    border-radius: 10px;
-   color:#2D4059 ;
+   color: var(--secondary-color) ;
 
 }
 .menu-button-container {
@@ -80,7 +113,7 @@ html, body {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -144,7 +177,7 @@ html, body {
     padding: 0;
     border-radius: 0;
     color:#F07B3F ;
-    background-color: #2D4059;
+    background-color: var(--secondary-color);
  
  }
   .menu > li {
@@ -153,40 +186,43 @@ html, body {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    background-color:#2D4059 ;
+    background-color: var(--secondary-color);
     text-decoration: none;
   }
   .menu li a{
-    color: #FFFFFF;
+    color: var(--primary-color);
   }
 }
 
 /* spacing vertical */
 .spacing{
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 /* container 1 */
 .container1{
   width: 100%;
+  font-style: var(--text-color);
 }
 .container1-box1{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 100px;
+  padding-top: 50px;
+  /* border-radius: 40px; */
 }
 .schedule-call{
   width: 390px;
   height: 180px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   border-radius: 12px;
-  background-color: #2D4059;
-  color: #FFFFFF;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,17 +235,18 @@ html, body {
   width: 125px;
   height: 50px;
   background-color: #F07B3F;
-  color: #FFFFFF;
+  color: var(--primary-color);
   border-radius: 12px;
   margin-left: 200px;
 }
 .schedule-call>div>button>a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .img-box{
-  width: 450px;
-  height: 350px;
+  width: 500px;
+  height: 400px;
+  object-fit: contain;
 }
 .container1-box2{
     display: flex;
@@ -218,15 +255,22 @@ html, body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    color: #2D4059;
+    color: var(--secondary-color);
+    font-style: var(--text-color);
+    background-color: var(--primary-color);
 }
 .welcome-heading{
   width: 430px;
-  font-size: 20px;
+  font-size: 30px;
+  line-height: 50px;
 }
 .description{
-  width: 70%;
+  width: 50%;
   font-size: 16px;
+  color: var(--secondary-color);
+  text-decoration: var(--primary-color);
+  line-height: 25px;
+  
 }
 /* container-2 */
 .container2{
@@ -238,15 +282,17 @@ html, body {
   gap: 50px;
   justify-content: space-evenly;
   padding: 60px 20px;
-
+  font-style: var(--text-color);
 }
 .container2>div{
   width: 300px;
-  height: 350px;
-  background-color: #FFFFFF;
-  color: #2D4059;
+  height: 300px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 16px;
   padding: 20px;
+  line-height: 21px;
+  border-radius: 40px;
 }
 .box>div{
   width: 50px;
@@ -256,47 +302,51 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-.box>div>i{
-  font-size: 38px;
-  color: #19A7CE;
+.box>div>img{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 
 }
 .why{
   background-color: #EFEFEF;
   width: 100%;
   height: 100px;
-  color: #2D4059;
+  color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: var(--text-color);
+  padding-bottom: 0px;
+  font-size: 1.4rem;
 }
 .box1:hover{
   background-color:#19A7CE ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box2:hover{
   background-color:#609966 ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box3:hover{
   background-color:#F07B3F ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box4:hover{
   background-color:#19A7CE ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box5:hover{
   background-color:#F07B3F ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box6:hover{
   background-color:#19A7CE ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .box7:hover{
   background-color:#609966 ;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 
 /* container-3 */
@@ -304,12 +354,13 @@ html, body {
 .container3{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
-  color: #2D4059;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+  font-style: var(--text-color);
 
 }
 .container3>div{
@@ -340,40 +391,57 @@ line-height: 23px;
 /* container-4 */
 
 .how{
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   width: 100%;
   height: 100px;
-  color: #2D4059;
+  color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.4rem;
 }
 .container4{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
-  gap: 140px;
+  gap: 60px;
   justify-content: space-evenly;
   padding: 20px 20px;
+  font-style: var(--text-color);
 }
 .container4>div{
   width: 300px;
   height: 300px;
   background-color: #EFEFEF;
-  color: #2D4059;
+  color: var(--secondary-color);
   font-size: 16px;
-  padding: 10px;
+  padding: 2%;
+  line-height: 22px;
+  border-radius: 40px;
 }
 .box11>div{
   width: 50px;
   height: 50px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
 }
-.box11:hover{
-  background-color: #2D4059;
-  color: #FFFFFF;
+
+.box-1:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.box-2:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.box-3:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.box-4:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* footerContactDetailes */
@@ -387,8 +455,8 @@ line-height: 23px;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #2D4059;
-  color:#FFFFFF ;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   margin-top: 40px;
   font-size: 15px;
   font-weight: 300;
@@ -401,8 +469,8 @@ line-height: 23px;
 .detailes>div>a{
   line-height: 40px;
   text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 300;
+  color: var(--primary-color);
+  /* font-weight: 400; */
   font-size: 16px;
   
 }
@@ -416,13 +484,15 @@ line-height: 23px;
   
 }
 .logo-description>p{
-  margin: 0;
-  padding-left: 30px;
+  text-align: right;
+  line-height: 20px;
 }
 .logo-img>img{
   width: 230px;
-  height: 80px;
+  height: auto;
   object-fit: fill;
+  padding-top: 35px;
+  padding-bottom: 20px;
 } */
 .logo-img{
   width:150px;
@@ -440,7 +510,7 @@ footer{
 .footerSocialMedia{
   width: 100%;
   height: auto;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   text-align: center;
 }
 .footerSocialMedia>div{
@@ -448,7 +518,7 @@ footer{
 }
 .footerSocialMedia>div>a>i{
   margin-right: 10px;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 
 
@@ -459,8 +529,8 @@ footer{
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
-  color: #FFFFFF;
-  background-color: #2D4059;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 /* About us page */
@@ -470,7 +540,7 @@ footer{
 .container-1{
     width: 100%;
     height: 512px;
-    background-image: url(../images/AboutUs-1.png);
+    background-image: url(../images/about/about_us.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -479,6 +549,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    font-style: var(--text-color);
 }
 .schedule-call2{
     background-color: #F07B3F;
@@ -489,16 +560,16 @@ footer{
 }
 .schedule-call2>a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--primary-color);
 }
 .conatiner-1-text{
-    width: 450px;
+    width: 600px;
     height: auto;
-    color: #2D4059;
+    color: var(--secondary-color);
     font-size: 32px;
     font-weight: 900;
-    margin-top: 120px;
-    /* margin-bottom: 150px;  */
+    margin-bottom: 150px; 
+    text-align: center;
 }
 
 /* container-2,3,4*/
@@ -512,7 +583,8 @@ footer{
     align-items: center;
     gap: 20px;
     padding: 100px 0;
-    background-color: #FFFFFF;
+    background-color: var(--primary-color);
+    font-style: var(--text-color);
 }
 .container-3{
     width: 100%;
@@ -524,6 +596,7 @@ footer{
     gap: 20px;
     padding: 100px 0;
     background-color: #EFEFEF;
+    font-style: var(--text-color);
 }
 .container-4{
     width: 100%;
@@ -533,28 +606,29 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #FFFFFF;
-    color: #2D4059;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-style: var(--text-color); 
+}
+.heading2:hover,.heading3:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-style: var(--text-color);
 }
 .img-3{
-    width: 300px;
-    height: 260px;
-}
-.img-3>i{
-    font-size: 260px;
-    text-align: center;
-    color: #19A7CE;
+    width: 240px;
+    height: 240px;
 }
 .img-3>img{
-  width: 250px;
-    height: 250px;
-    object-fit: cover;
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
 }
 .ourMission-content{
     width: 620px;
     height: auto;
     text-align: center;
-    color: #2D4059;
+    color: var(--secondary-color);
     
 }
 .heading1{
@@ -562,16 +636,19 @@ footer{
     font-weight: 700;
 }
 .content2{
-    width: 620px;
+    width: 600px;
     height: auto;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
+    line-height: 25px;
+
 }
 .content3{
      width: 65%;
      height: auto;
      font-size: 16px;
-     font-weight: 600;
+     /* font-weight: 600; */
+     line-height: 25px;
 }
 
 /* container-5 */
@@ -580,10 +657,11 @@ footer{
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .teamWork-boxes{
    width: 520px;
@@ -604,14 +682,15 @@ footer{
 .img-5{
    width: 60px;
    height: 60px;
-   background-color: #FFFFFF;
+   background-color: var(--primary-color);
    display: flex;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+   align-items: center;
 }
-.img-5>i{
-  color: #19A7CE;
-  font-size: 45px;
+.img-5>img{
+  width: 55px;
+   height: 55px;
+   object-fit: contain;
 }
 .content4{
   width: 381px;
@@ -619,7 +698,7 @@ footer{
   font-size: 16px;
   font-weight: 400;
   padding: 0px 10px;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .heading2{
   font-size:22px;
@@ -632,14 +711,17 @@ footer{
   justify-content: center;
   align-items: center;
 }
-.img-4>i{
-  font-size: 220px;
+.img-4>img{
+  width:250px;
+  height: 250px;
+  object-fit: contain;
 }
 .teamWork-boxes>div:hover{
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
 }
 .content4:hover{
   color: #FFFFFF;
+  font-style: var(--text-color);
 }
 
 /* container-6 */
@@ -652,16 +734,16 @@ footer{
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  font-style: var(--text-color);
 }
 .img-6{
-  width: 650px;
-  height: 383px;
-  border: 2px solid #609966;
+  width: 700px;
+  height: 400px;
 }
 .img-6>img{
-  width: 650px;
-  height: 450px;
-  object-fit:cover ;
+  width: 700px;
+  height: 400px;
+  object-fit:contain;
 }
 .content5{
   width:600px;
@@ -672,7 +754,7 @@ footer{
   text-align: center;
 }
 .content5>div{
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .content5>div>label{
   font-size: 30px;
@@ -680,7 +762,8 @@ footer{
 }
 .content5>div>p{
   font-size: 16px;
-  font-weight: 600;
+  line-height: 25px;
+  /* font-weight: 600; */
 }
 
 /* services page css */
@@ -694,14 +777,14 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   gap: 30px;
   padding: 30px;
 }
 .content6{
   width: 460px;
   height:250px;
-  color: #FFFFFF;
+  color: var(--primary-color);
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -723,10 +806,10 @@ footer{
   margin-left: 135px;
 }
 .content6>div>a{
-  font-size: 20px;
-  font-weight: 900;
+  font-size: 18px;
+  /* font-weight: 900; */
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--primary-color);
 }
 .img-7{
   width: 600px;
@@ -738,16 +821,18 @@ footer{
 .container-12{
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-12>p{
   width: 532px;
   font-size: 32px;
   font-weight: 700;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 
 /* container-13 */
@@ -758,8 +843,10 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 50px;
-  padding: 80px 0;
+  gap: 30px;
+  padding: 0px 80px 80px 80px;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-13>div{
   width: 260px;
@@ -771,14 +858,21 @@ footer{
   width: 55px;
   height: 55px;
   background-color: #EFEFEF;
-  border: 2px solid #609966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+}
+.container-13>div>div>img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 .container-13>div>h3{
   width: 100%;
-  height: 52px;
-  background-color: #EFEFEF;
-  color: #2D4059;
+  height: 30px;
+  /* background-color: #EFEFEF; */
+  color: var(--secondary-color);
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -787,10 +881,12 @@ footer{
   width: 100%;
   height: 156px;
   background-color: #EFEFEF;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: left;
   font-size: 14px;
   font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
 }
 
 /* container-14 */
@@ -798,12 +894,13 @@ footer{
 .container-14{
   width: 100%;
   height:auto;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   padding:40px;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
-  align-items: flex-end; 
+  align-items: flex-end;
+  font-style: var(--text-color); 
 }
 .container-14>.heading3{
   width: 100%;
@@ -812,14 +909,14 @@ footer{
 .heading3>p{
   font-size: 30px;
   font-weight: 600;
-  color: #FFFFFF;
+  color: var(--primary-color);
   text-align: center;
 }
 .container-14>.schedule-button{
   width: 350px;
   height: 60px;
   border-radius: 25px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -827,19 +924,20 @@ footer{
 }
 .container-14>.schedule-button>a{
   text-decoration: none;
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   color: #F07B3F;
 }
 .container-15{
   width: 100%;
   height: auto;
-  background-color: #FFFFFF
+  background-color: var(--primary-color);
+  font-style: var(--text-color);
 }
 .container-15>p{
   font-size:32px;
   font-weight: 700;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -852,18 +950,23 @@ footer{
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 20px;
+  font-style: var(--text-color);
+}
+.container-16>div:hover{
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .container-16>div{
   width: 300px;
   height: 360px;
   background-color: #EFEFEF;
   padding: 10px;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .container-16>div>div{
   width: 50px;
   height: 50px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
 }
 .container-16>div>h3{
   font-size: 20px;
@@ -887,11 +990,13 @@ footer{
   align-items: center;
   gap: 20px;
   padding: 20px;
+  font-style: var(--text-color);
+  background-color: var(--primary-color);
 }
 .content7{
   width: 409px;
   height:200px;
-  color: #2D4059;
+  color: var(--secondary-color);
   text-align: center;
 }
 .content7>h3{
@@ -905,7 +1010,11 @@ footer{
 .img-8{
   width: 769px;
   height: 411px;
-  border: 2px solid #609966;
+}
+.img-8>img{
+  width: 769px;
+  height: 411px;
+  object-fit:contain;
 }
 
 /* container-22 */
@@ -923,7 +1032,7 @@ footer{
 .container-22>div{
   width: 500px;
   height: 734px;
-  color: #2D4059;
+  color: var(--secondary-color);
   background-color: #EFEFEF;
 }
 .contactUs-box{
@@ -941,7 +1050,7 @@ footer{
 .contactUs-box>div{
   width: 450px;
   height: 160px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -951,8 +1060,15 @@ footer{
 .img-9{
   width:100px;
   height: 110px;
-  border: 2px solid #609966;
   background-color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-9>img{
+  width:90px;
+  height: 100px;
+  object-fit: contain;
 }
 .content8{
   width: 286px;
@@ -973,7 +1089,7 @@ footer{
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
-  color: #2D4059;
+  color: var(--secondary-color);
 }
 .schedule-call-box>p{
   font-size: 32px;
@@ -992,19 +1108,19 @@ footer{
 .schedule-call-box>form>.input-box1{
   width:100%;
   height: 38px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   border: none;
 }
 .schedule-call-box>form>.input-box2{
   width: 100%;
   height: 131px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   border: none;
 }
 .schedule-call-box>form>button{
   width: 100%;
   height: 38px;
-  background-color: #2D4059;
+  background-color: var(--secondary-color);
   color: #F07B3F;
   font-size:24px;
   font-weight: 600;
