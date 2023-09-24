@@ -800,6 +800,7 @@ footer{
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   
 }
 .content6>p{
@@ -807,7 +808,7 @@ footer{
   font-weight: 700;
 }
 .content6>div{
-  width: 300px;
+  width: 275px;
   height: 75px;
   border-radius: 12px;
   background-color: #F07B3F;
@@ -823,10 +824,8 @@ footer{
   color: var(--primary-color);
 }
 .img-7{
-  width: 600px;
+  width: 700px;
   height: 411px;
-  border: 2px solid #609966;
-
 }
 /* container-12 */
 .container-12{
