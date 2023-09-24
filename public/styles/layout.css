@@ -816,7 +816,7 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 50px;
-  padding-bottom: 0px 80px 80px 80px;
+  padding: 0px 80px 80px 80px;
   font-style: var(--text-color);
   background-color: var(--primary-color);
 }
