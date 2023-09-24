@@ -246,6 +246,7 @@ html, body {
 .img-box{
   width: 500px;
   height: 400px;
+  object-fit: contain;
 }
 .container1-box2{
     display: flex;
@@ -297,11 +298,14 @@ html, body {
   width: 50px;
   height: 50px;
   background-color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.box>div>i{
-  font-size: 50px;
-  color: #19A7CE;
-  margin: auto;
+.box>div>img{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
 
 }
 .why{
@@ -559,12 +563,13 @@ footer{
     color: var(--primary-color);
 }
 .conatiner-1-text{
-    width: 616px;
+    width: 600px;
     height: auto;
     color: var(--secondary-color);
     font-size: 32px;
     font-weight: 900;
-    margin-bottom: 250px; 
+    margin-bottom: 150px; 
+    text-align: center;
 }
 
 /* container-2,3,4*/
@@ -611,9 +616,13 @@ footer{
   font-style: var(--text-color);
 }
 .img-3{
-    width: 0px;
+    width: 240px;
     height: 240px;
-    border: 2px solid #609966;
+}
+.img-3>img{
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
 }
 .ourMission-content{
     width: 620px;
@@ -648,7 +657,7 @@ footer{
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   font-style: var(--text-color);
@@ -658,9 +667,9 @@ footer{
    width: 520px;
    height: 450px;
    display: flex;
-   flex-flow: column wrap;
+   flex-flow: row wrap;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content:space-evenly;
    
 }
 .teamWork-boxes>div{
@@ -674,6 +683,14 @@ footer{
    width: 60px;
    height: 60px;
    background-color: var(--primary-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img-5>img{
+  width: 55px;
+   height: 55px;
+   object-fit: contain;
 }
 .content4{
   width: 381px;
@@ -690,7 +707,14 @@ footer{
 .img-4{
   width:250px ;
   height: 250px;
-  border: 2px solid #609966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-4>img{
+  width:250px;
+  height: 250px;
+  object-fit: contain;
 }
 .teamWork-boxes>div:hover{
   background-color: var(--secondary-color);
@@ -713,9 +737,13 @@ footer{
   font-style: var(--text-color);
 }
 .img-6{
-  width: 650px;
-  height: 383px;
-  border: 2px solid #609966;
+  width: 700px;
+  height: 400px;
+}
+.img-6>img{
+  width: 700px;
+  height: 400px;
+  object-fit:contain;
 }
 .content5{
   width:600px;
@@ -830,8 +858,15 @@ footer{
   width: 55px;
   height: 55px;
   background-color: #EFEFEF;
-  border: 2px solid #609966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+}
+.container-13>div>div>img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 .container-13>div>h3{
   width: 100%;
@@ -975,7 +1010,11 @@ footer{
 .img-8{
   width: 769px;
   height: 411px;
-  border: 2px solid #609966;
+}
+.img-8>img{
+  width: 769px;
+  height: 411px;
+  object-fit:contain;
 }
 
 /* container-22 */
@@ -1021,8 +1060,15 @@ footer{
 .img-9{
   width:100px;
   height: 110px;
-  border: 2px solid #609966;
   background-color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-9>img{
+  width:90px;
+  height: 100px;
+  object-fit: contain;
 }
 .content8{
   width: 286px;
