@@ -868,7 +868,7 @@ footer{
 .container-13>div>div{
   width: 55px;
   height: 55px;
-  background-color: #EFEFEF;
+  /* background-color: #EFEFEF; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -894,7 +894,7 @@ footer{
   background-color: #EFEFEF;
   color: var(--secondary-color);
   text-align: left;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 22px;
   padding: 10px;
