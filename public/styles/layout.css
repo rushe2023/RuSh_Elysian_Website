@@ -65,7 +65,7 @@ html, body {
 }
 
 .dark-theme {
-  --primary-color: #333333;
+  --primary-color: #2D4059;
   --secondary-color: #FFFFFF;
   --text-color: #FFFFFF;
   --accent-color: #FF5733;
@@ -247,6 +247,7 @@ html, body {
   width: 500px;
   height: 400px;
   object-fit: contain;
+  background-color: #FFFFFF;
 }
 .container1-box2{
     display: flex;
