@@ -629,11 +629,6 @@ footer{
     color: var(--secondary-color);
     font-style: var(--text-color); 
 }
-.heading2:hover,.heading3:hover{
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  font-style: var(--text-color);
-}
 .img-3{
     width: 240px;
     height: 240px;
@@ -696,6 +691,7 @@ footer{
   height: 180px;
   padding: 10px;
   background-color: #EFEFEF;
+  color: #2D4059;
   display: flex;
 }
 .img-5{
@@ -734,13 +730,6 @@ footer{
   width:250px;
   height: 250px;
   object-fit: contain;
-}
-.teamWork-boxes>div:hover{
-  background-color: var(--secondary-color);
-}
-.content4:hover{
-  color: #FFFFFF;
-  font-style: var(--text-color);
 }
 
 /* container-6 */
@@ -867,18 +856,20 @@ footer{
   background-color: var(--primary-color);
 }
 .container-13>div{
-  width: 260px;
+  width: 280px;
   height: 315px;
   padding: 20px 0;
-  margin: 20px;
   border-radius: 10px;
   display: flex;
+  background-color: #EFEFEF;
+  color: var(--secondary-color);
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .container-13>div:hover{
   background-color: #2D4059;
+  color: #FFFFFF;
 }
 
 .container-13>div>div{
@@ -899,19 +890,14 @@ footer{
   width: 100%;
   height: 30px;
   /* background-color: #EFEFEF; */
-  color: var(--secondary-color);
+  
   text-align: center;
   font-size: 18px;
   font-weight: 600;
 }
-.container-13:hover{
-  color: #FFFFFF;
-}
 .container-13>div>p{
   width: 90%;
   height: 156px;
-  background-color: #EFEFEF;
-  color: var(--secondary-color);
   text-align: left;
   font-size: 15px;
   font-weight: 400;
@@ -983,16 +969,17 @@ footer{
   font-style: var(--text-color);
   padding: 0px 30px 30px;
 }
-.container-16>div:hover{
-  font-style: var(--text-color);
-  background-color: var(--primary-color);
-}
 .container-16>div{
   width: 500px;
   height: 360px;
   background-color: #EFEFEF;
   padding: 10px;
   color: var(--secondary-color);
+}
+.container-16>div:hover{
+  font-style: var(--text-color);
+  color: #FFFFFF;
+  background-color: var(--secondary-color);
 }
 .container-16>div>div{
   width: 50px;
