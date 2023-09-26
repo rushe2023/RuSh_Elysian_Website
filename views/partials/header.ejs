@@ -6,6 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- JavaScript libraries at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/styles/layout.css">
   <title>RuSh Elysian Pvt Ltd</title>
   <link rel="icon" type="image/x-icon" href="images\RSE_Copy_Main_Square_fAVICON_CIRCLE.png">
@@ -34,6 +40,7 @@
   </nav>
 </header>
 <script>
+// For changing the theme/mode
 document.addEventListener("DOMContentLoaded", function () {
     var icon = document.getElementById("icon");
     // Check if the theme preference is stored in localStorage.
@@ -61,6 +68,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 });
+
+// Fixing the header logo w.r.t the theme/mode
+
+document.addEventListener("DOMContentLoaded", function () {
+    var logo = document.getElementById("logo-theme");
+
+    // Check if the theme preference is stored in localStorage.
+    var themePreference = localStorage.getItem("theme");
+
+    console.log("Theme Preference:", themePreference);
+
+    // Set the initial theme based on the stored preference or default to light.
+    if (themePreference === "dark") {
+        document.body.classList.add("dark-theme");
+        logo.src = "images/home/RuSh_Elysian_Main_white.png";
+    } else {
+        document.body.classList.remove("dark-theme");
+        logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
+    }
+
+    logo.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+            logo.src = "images/home/RuSh_Elysian_Main_white.png";
+            localStorage.setItem("theme", "dark");
+        } else {
+            logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
+            localStorage.setItem("theme", "light");
+        }
+
+        console.log("Theme Toggled:", document.body.classList.contains("dark-theme"));
+    };
+});
+
 </script> 
 
 <main >
