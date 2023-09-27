@@ -40,6 +40,12 @@ html, body {
 .box:hover{
   transform: scale(1.15);
 }
+.hover1{
+  transition: all 0.2s;
+}
+.hover1:hover{
+  transform: scale(1.2);
+}
 
 
 /* nav bar */
@@ -115,6 +121,23 @@ html, body {
 
 #menu-toggle {
   display: none;
+}
+.nav-link{
+  position: relative;
+}
+.nav-link::after{
+  content: '';
+  opacity: 0;
+  transition: all 0.5s;
+  height: 2px;
+   width: 100%;
+   background-color: #F07B3F;
+   position: absolute; 
+   bottom: 0;
+   left: 0;
+}
+.nav-link:hover::after{
+  opacity: 1;  
 }
 
 .menu-button,
@@ -551,8 +574,11 @@ td{
 }
 .footerSocialMedia>div{
   font-size: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
-.footerSocialMedia>div>a>i{
+.footerSocialMedia>div>div>a>i{
   margin-right: 10px;
   color: var(--secondary-color);
 }
