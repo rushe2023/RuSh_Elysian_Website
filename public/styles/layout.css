@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* nav bar */
-h2 {
+
+
+/* heading sizes */
+h1{
+  font-size: 34px;
+}
+h2{
+  font-size: 30px;
   vertical-align: center;
   text-align: center;
 }
+h3{
+  font-size: 23px;
+}
+
+/* Body elements */
 
 html, body {
   margin: 0;
@@ -21,6 +32,17 @@ html, body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
+
+/* animation for cards */
+.box{
+  transition: all 0.6s;
+}
+.box:hover{
+  transform: scale(1.15);
+}
+
+
+/* nav bar */
 .logo>img{
   width: 300px;
   height: auto;
@@ -252,7 +274,6 @@ html, body {
 }
 .welcome-heading{
   width: 430px;
-  font-size: 30px;
   line-height: 50px;
 }
 .description{
@@ -281,12 +302,12 @@ html, body {
   /* background-color: var(--primary-color); */
   background-color: #EFEFEF;
   color: var(--secondary-color);
-  font-size: 16px;
+  font-size: 16px ;
   padding: 20px;
   line-height: 21px;
   border-radius: 40px;
 }
-.box>div{
+.box11>div{
   width: 50px;
   height: 50px;
   background-color: #EFEFEF;
@@ -294,7 +315,7 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-.box>div>img{
+.box11>div>img{
   width: 45px;
   height: 45px;
   object-fit: contain;
@@ -310,7 +331,7 @@ html, body {
   justify-content: center;
   align-items: center;
   padding-bottom: 0px;
-  font-size: 1.4rem;
+  font-size: 1.4rem ;
 }
 .box1:hover{
   background-color:#19A7CE ;
@@ -415,7 +436,7 @@ line-height: 26px;
 }
 .container4>div{
   width: 300px;
-  height: 300px;
+  height: 320px;
   background-color: #EFEFEF;
   color: var(--secondary-color);
   font-size: 16px;
@@ -479,10 +500,19 @@ line-height: 26px;
 }
 .contact-detailes{
   width: 230px;
-  height: 200px;
-}
-.contact-detailes>pre{
+  height: auto;
   color: var(--secondary-color);
+}
+table{
+  border: 10px;
+}
+tr{
+  height: 40px;
+}
+td{
+  vertical-align: top;
+  height: auto;
+  border-collapse: collapse;
 }
 .logo-description{
   width: 230px;
@@ -838,11 +868,11 @@ line-height: 26px;
 }
 .container-13>div{
   width: 280px;
-  height: 315px;
+  height: 280px;
   padding: 20px 0;
   border-radius: 10px;
   display: flex;
-  background-color: #EFEFEF;
+  background-color: #FFFFFF;
   color: var(--secondary-color);
   flex-direction: column;
   justify-content: center;
@@ -879,7 +909,7 @@ line-height: 26px;
 .container-13>div>p{
   width: 90%;
   height: 156px;
-  text-align: left;
+  text-align: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
