@@ -19,7 +19,7 @@
   <nav class="top-nav">
     <a class="active" href="/">
     <div class="logo">
-      <img src="images\home\RuSh_Elysian_Main_Blue_cropped.png" id="logo-theme">
+      <img src="images\home\RuSh_Elysian_Main_Blue_cropped.png" id="logo">
     </div>
     </a>
     <input id="menu-toggle" type="checkbox" />
@@ -37,46 +37,46 @@
   </nav>
 </header>
 <script>
-// For changing the theme/mode
 document.addEventListener("DOMContentLoaded", function () {
-    var icon = document.getElementById("icon");
+            var icon = document.getElementById("icon");
+            
+            // Check if the theme preference is stored in localStorage.
+            var themePreference = localStorage.getItem("theme");
+            
+            // Set the initial theme based on the stored preference or default to light.
+            if (themePreference === "dark") {
+                document.body.classList.add("dark-theme");
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            } else {
+              document.body.classList.remove("dark-theme");
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            }
+            
+            icon.onclick = function () {
+                document.body.classList.toggle("dark-theme");
+                if (document.body.classList.contains("dark-theme")) {
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                  icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                    localStorage.setItem("theme", "light");
+                }
+            };
+        });
+
+ <!-- Fixing the header logo w.r.t the theme/mode -->
+
+ document.addEventListener("DOMContentLoaded", function () {
+     var logo = document.getElementById("logo");
+
     // Check if the theme preference is stored in localStorage.
-    var themePreference = localStorage.getItem("theme");
-    // Set the initial theme based on the stored preference or default to light
-    if (themePreference === "dark") {
-        document.body.classList.add("dark-theme");
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-    } else {
-        document.body.classList.remove("dark-theme");
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-    }
-    icon.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-            icon.classList.remove("fa-moon");
-            icon.classList.add("fa-sun");
-            localStorage.setItem("theme", "dark");
-        } else {
-            icon.classList.remove("fa-sun");
-            icon.classList.add("fa-moon");
-            localStorage.setItem("theme", "light");
-        }
-    };
-});
+   var themePreference = localStorage.getItem("theme");
 
-// Fixing the header logo w.r.t the theme/mode
-
-document.addEventListener("DOMContentLoaded", function () {
-    var logo = document.getElementById("logo-theme");
-
-    // Check if the theme preference is stored in localStorage.
-    var themePreference = localStorage.getItem("theme");
-
-    console.log("Theme Preference:", themePreference);
-
-    // Set the initial theme based on the stored preference or default to light.
+   // Set the initial theme based on the stored preference or default to light.
     if (themePreference === "dark") {
         document.body.classList.add("dark-theme");
         logo.src = "images/home/RuSh_Elysian_Main_white.png";
@@ -85,22 +85,21 @@ document.addEventListener("DOMContentLoaded", function () {
         logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
     }
 
-    logo.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-            logo.src = "images/home/RuSh_Elysian_Main_white.png";
-            localStorage.setItem("theme", "dark");
-        } else {
-            logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
-            localStorage.setItem("theme", "light");
-        }
-
-        console.log("Theme Toggled:", document.body.classList.contains("dark-theme"));
-    };
-});
+     logo.onclick = function () {
+         document.body.classList.toggle("dark-theme");
+         if (document.body.classList.contains("dark-theme")) {
+             icon.classList.remove("fa-moon");
+             icon.classList.add("fa-sun");
+             logo.src = "images/home/RuSh_Elysian_Main_white.png";
+             localStorage.setItem("theme", "dark");
+         } else {
+             icon.classList.remove("fa-sun");
+             icon.classList.add("fa-moon");
+             logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
+             localStorage.setItem("theme", "light");
+         }
+     };
+ });
 
 </script> 
-
-<main >
-
-     
+<main>

@@ -7,7 +7,7 @@
         <div><a href="/contact">Schedule A Free Consultation</a></div>
     </div>
     <div >
-        <img src="images\services\our_services.png">
+        <img src="images\services\our_services.png" id="images">
     </div>
 </section>
 <!-- container-12 -->
@@ -138,8 +138,51 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
   </a>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- JavaScript libraries at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </div>
 </div>
 </section>
+
+<!-- Fixing the container-11 image w.r.t the theme/mode -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function Loading () {
+    var images = document.getElementById("images");
+
+    // Check if the theme preference is stored in localStorage.
+    var themePreference = localStorage.getItem("theme");
+
+    //  console.log("Theme Preference:", themePreference);
+
+    // Set the initial theme based on the stored preference or default to light.
+    if (themePreference === "dark") {
+        document.body.classList.add("dark-theme");
+        images.src = "images/services/our_services.png";
+    } else {
+        document.body.classList.remove("dark-theme");
+        images.src = "images/services/our_services2.png";
+    }
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+            images.src = "images/services/our_services.png";
+            localStorage.setItem("theme", "dark");
+        } else {
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+            images.src = "images/services/our_services2.png";
+            localStorage.setItem("theme", "light");
+        }
+      }
+   });
+</script>
 
 <%- include("partials/footer.ejs") %>
