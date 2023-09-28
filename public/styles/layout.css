@@ -281,7 +281,7 @@ html, body {
   width: 500px;
   height: 400px;
   object-fit: contain;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
 }
 .container1-box2{
     display: flex;
