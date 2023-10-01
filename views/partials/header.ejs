@@ -84,21 +84,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("dark-theme");
         logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
     }
+   // Check for a specific condition, for example, when a button is clicked
+document.getElementById("icon").addEventListener("click", function () {
+    // Perform your JavaScript actions that may change the page content
+    // ...
 
-     logo.onclick = function () {
-         document.body.classList.toggle("dark-theme");
-         if (document.body.classList.contains("dark-theme")) {
-             icon.classList.remove("fa-moon");
-             icon.classList.add("fa-sun");
-             logo.src = "images/home/RuSh_Elysian_Main_white.png";
-             localStorage.setItem("theme", "dark");
-         } else {
-             icon.classList.remove("fa-sun");
-             icon.classList.add("fa-moon");
-             logo.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
-             localStorage.setItem("theme", "light");
-         }
-     };
+    // Reload the page
+    location.reload();
+});
+
+     
  });
 
 </script> 

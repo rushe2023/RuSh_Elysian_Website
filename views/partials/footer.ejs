@@ -54,8 +54,7 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </section>  
-<script src="..\..\app.js"></script>
-<script>
+ <script>
   // Fixing the footer logo w.r.t the theme/mode
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -75,17 +74,15 @@ document.addEventListener("DOMContentLoaded", function () {
         logoimg.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
     }
            
+    // Check for a specific condition, for example, when a button is clicked
+document.getElementById("icon").addEventListener("click", function () {
+    // Perform your JavaScript actions that may change the page content
+    // ...
 
-    logoimg.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-            logoimg.src = "images/home/RuSh_Elysian_Main_white.png";
-            localStorage.setItem("theme", "dark");
-        } else {
-            logoimg.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
-            localStorage.setItem("theme", "light");
-        }
-    };
+    // Reload the page
+    location.reload();
+});
+
 });
 </script>
 </body>
