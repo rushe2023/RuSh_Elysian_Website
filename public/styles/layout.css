@@ -240,6 +240,10 @@ html, body {
   padding: 2rem 0;
 }
 
+/* <-------------------------------------------------------------------------------------------> */
+
+/* Home Page */
+
 /* container 1 */
 .container1{
   width: 100%;
@@ -307,7 +311,7 @@ html, body {
     background-color: var(--primary-color);
 }
 .welcome-heading{
-  width: 430px;
+  width: 100%;
   line-height: 50px;
 }
 .description{
@@ -432,8 +436,8 @@ html, body {
 }
 .img-2>img{
   object-fit: contain;
-  height: auto;
-  width: 75%;
+  height: 290px;
+  width: 750px;
 }
 .agile-heading{
   text-align: center;
@@ -509,6 +513,21 @@ line-height: 26px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+
+@media (max-width: 900px){
+  .img-2>img{
+    object-fit: contain;
+    height: 210px;
+    width: 500px;
+  }
+  .img-2>img{
+    object-fit: contain;
+    height: 160px;
+    width: 390px;
+  }
+}
+
+/* <---------------------------------------------------------------------------------------------------------> */
 
 /* footerContactDetailes */
 
@@ -614,6 +633,8 @@ td{
   background-color: var(--primary-color);
 }
 
+/* <-------------------------------------------------------------------------------------------------> */
+
 /* About us page */
 
 /* container-1 */
@@ -698,7 +719,7 @@ td{
     object-fit: contain;
 }
 .ourMission-content{
-    width: 620px;
+    width: 40%;
     height: auto;
     text-align: center;
     color: var(--secondary-color);
@@ -709,8 +730,6 @@ td{
     font-weight: 700;
 }
 .content2{
-    width: 600px;
-    height: auto;
     font-size: 16px;
     /* font-weight: 600; */
     line-height: 25px;
@@ -833,6 +852,57 @@ td{
   /* font-weight: 600; */
 }
 
+@media (max-width: 900px){
+  .ourMission-content{
+    width: 430px;
+    height: auto;
+  }
+  .conatiner-5{
+    flex-direction: column;
+  }
+  .teamWork-boxes{
+    width: 430px;
+  }
+  .teamWork-boxes>div{
+    width: 430px;
+    height: 200px;
+  }
+  .img-6{
+    width:430px;
+    height: 250px;
+  }
+  .img-6>img{
+    width: 430px;
+    height: 250px;
+  }
+}
+@media (max-width: 900px){
+  .ourMission-content{
+    width: 390px;
+    height: auto;
+  }
+  .conatiner-5{
+    flex-direction: column;
+  }
+  .teamWork-boxes{
+    width: 390px;
+  }
+  .teamWork-boxes>div{
+    width: 390px;
+    height: 200px;
+  }
+  .img-6{
+    width:390px;
+    height: 250px;
+  }
+  .img-6>img{
+    width: 390px;
+    height: 250px;
+  }
+}
+
+/* <-------------------------------------------------------------------------------------> */
+
 /* services page css */
 
  /* container-11 */
@@ -882,6 +952,7 @@ td{
 .img-7{
   width: 700px;
   height: 411px;
+  object-fit: contain;
 }
 /* container-12 */
 .container-12{
@@ -1061,7 +1132,33 @@ td{
 .carousel-control-next {
   color: green;
 }
+@media (max-width: 900px){
+  .img-7{
+    width: 450px;
+    height: 270px;
+  }
+  
+}
+@media (max-width: 450px){
+  .content6{
+   width: 390px;
+  }
+  .content6>p{
+    font-size: 28px;
+  }
+  .content6>div{
+    width: 240px;
+  }
+  .content6>div>a{
+    font-size: 17px;
+  }
+  .img-7{
+    width: 390px;
+    height: 250px;
+  }
+}
 
+/* ---------------------------------------------------------------- */
 /* contact us page */
 
 /* container-21 */
@@ -1225,4 +1322,34 @@ td{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 900px){
+  .img-8{
+    width:470px;
+    height: 270px;
+  }
+  .img-8>img{
+    width:470px;
+    height: 270px;
+  }
+}
+@media (max-width: 450px){
+  .img-8{
+    width:390px;
+    height: 250px;
+  }
+  .img-8>img{
+    width:390px;
+    height: 250px;
+  }
+  .container-22>div{
+    width: 390px;
+  }
+  .contactUs-box>div{
+    width: 390px;
+  }
+  .schedule-call-box>form{
+    width: 390px;
+  }
 }
