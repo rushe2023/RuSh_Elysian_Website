@@ -519,11 +519,19 @@ line-height: 26px;
     object-fit: contain;
     height: 210px;
     width: 500px;
+  } 
+  .description{
+    width: 70%;
   }
+}
+@media (min-width: 400px){
   .img-2>img{
     object-fit: contain;
     height: 160px;
     width: 390px;
+  }
+  .description{
+    width: 90%;
   }
 }
 
@@ -876,7 +884,7 @@ td{
     height: 250px;
   }
 }
-@media (max-width: 900px){
+@media (min-width: 450px){
   .ourMission-content{
     width: 390px;
     height: auto;
@@ -1153,7 +1161,7 @@ td{
     font-size: 17px;
   }
   .img-7{
-    width: 390px;
+    width: 380px;
     height: 250px;
   }
 }
