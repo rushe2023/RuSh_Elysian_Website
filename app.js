@@ -87,36 +87,3 @@ app.listen(port, () => {
 
 
 
-
-
-// // Dark and light theame
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var logoimg = document.getElementById("logoimg");
-
-//   // Check if the theme preference is stored in localStorage.
-//   var themePreference = localStorage.getItem("theme");
-
-//   console.log("Theme Preference:", themePreference);
-
-//   // Set the initial theme based on the stored preference or default to light.
-//   if (themePreference === "dark") {
-//       document.body.classList.add("dark-theme");
-//       logoimg.src = "images/home/RuSh_Elysian_Main_white.png";
-//   } else {
-//       document.body.classList.remove("dark-theme");
-//       logoimg.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
-//   }
-         
-
-//   logoimg.onclick = function () {
-//       document.body.classList.toggle("dark-theme");
-//       if (document.body.classList.contains("dark-theme")) {
-//           logoimg.src = "images/home/RuSh_Elysian_Main_white.png";
-//           localStorage.setItem("theme", "dark");
-//       } else {
-//           logoimg.src = "images/home/RuSh_Elysian_Main_Blue_cropped.png";
-//           localStorage.setItem("theme", "light");
-//       }
-//   };
-// });
