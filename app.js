@@ -34,8 +34,10 @@ app.use(express.json()); // Parse JSON request bodies
 // Handle form submissions
 app.post('/subscribe', async (req, res) => {
   try {
-    const apiKey = process.env.MAILCHIMP_API_KEY;
-    const listId = process.env.MAILCHIMP_LIST_ID;
+    const apiKey = "5e32ac3d828b9c308e642005a4a27360-us8";
+    //process.env.MAILCHIMP_API_KEY
+    const listId = "8b8bf9d05f" ; 
+    //process.env.MAILCHIMP_LIST_ID 
 
     // Get the form data
     const { name, email, subject, message } = req.body;
@@ -50,7 +52,7 @@ app.post('/subscribe', async (req, res) => {
         MESSAGE: message,
       },
     };
-
+    // 5e32ac3d828b9c308e642005a4a27360-us8
     // Make a POST request to the Mailchimp API
     const response = await fetch(`https://us8.api.mailchimp.com/3.0/lists/${listId}/members`, {
       method: 'POST',
