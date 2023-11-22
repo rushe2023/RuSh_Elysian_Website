@@ -19,7 +19,7 @@ npm install express
 npm install @mailchimp/marketing
 
 # Set up environment variables for Mailchimp API
-echo "export MAILCHIMP_API_KEY=5e32ac3d828b9c308e642005a4a27360-us8" >> ~/.bashrc
+echo "export MAILCHIMP_API_KEY=a13dba0cf4d0c949ea09a9e1ecb3af8f-us8" >> ~/.bashrc
 echo "export MAILCHIMP_LIST_ID=8b8bf9d05f" >> ~/.bashrc
 
 # Source the updated bashrc to make environment variables available
