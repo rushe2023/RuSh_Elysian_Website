@@ -34,7 +34,7 @@ app.use(express.json()); // Parse JSON request bodies
 // Handle form submissions
 app.post('/subscribe', async (req, res) => {
   try {
-    const apiKey = "5e32ac3d828b9c308e642005a4a27360-us8";
+    const apiKey = "a13dba0cf4d0c949ea09a9e1ecb3af8f-us8";
     //process.env.MAILCHIMP_API_KEY
     const listId = "8b8bf9d05f" ; 
     //process.env.MAILCHIMP_LIST_ID 
